@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head data-base_url="https://coinectra.bugfinder.app" data-theme="1" data-changeable_mode="1"
+      data-light_logo="https://coinectra.bugfinder.app/assets/upload/logo/8JoZrpkenooJnSO71u5TgouLU2YcAZ.webp"
+      data-dark_logo="https://coinectra.bugfinder.app/assets/upload/logo/iycKeohyBLjKn0A3PK6hrdNAmvtpyE.webp">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinectra |             Home            </title>
+
+    <meta content="Launch your own cryptocurrency exchange platform like Changelly with Coinectra. Our script offers instant coin swaps, fiat integration, and an easy-to-use interface." name="description">
+<meta
+    content="crypto exchange script,cryptocurrency marketplace script,changelly clone script,crypto trading platform script,blockchain exchange script,fiat to crypto integration,token swap platform,cryptocurrency swapping tool,blockchain business script,crypto business software,decentralized exchange script,instant crypto swap script,cryptocurrency trading software,blockchain script for startups,fiat crypto exchange solution,crypto wallet integration,blockchain API script,multi-currency exchange platform,ready-made crypto script"
+    name="keywords">
+<meta name="theme-color" content="#5c5cf0">
+<meta name="author" content="Coinectra">
+<meta name="robots" content="index,follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coinectra">
+<meta property="og:title" content="Coinectra: Crypto Exchange Script for Coin Swaps and Fiat Support">
+<meta property="og:description" content="Launch your own cryptocurrency exchange platform like Changelly with Coinectra. Our script offers instant coin swaps, fiat integration, and an easy-to-use interface.">
+<meta property="og:image" content="https://coinectra.bugfinder.app/assets/upload//5X4WakXEU0UboIzL1v70lE4JXBnetA.webp">
+
+<meta name="twitter:card" content="Coinectra: Crypto Exchange Script for Coin Swaps and Fiat Support">
+<meta name="twitter:title" content="Coinectra: Crypto Exchange Script for Coin Swaps and Fiat Support">
+<meta name="twitter:description"
+      content="Launch your own cryptocurrency exchange platform like Changelly with Coinectra. Our script offers instant coin swaps, fiat integration, and an easy-to-use interface.">
+<meta name="twitter:image" content="https://coinectra.bugfinder.app/assets/upload//5X4WakXEU0UboIzL1v70lE4JXBnetA.webp">
+
+    <meta name="csrf-token" content="TljtgXaQm120O9L87Rp6QL1AwpedqoAr7i977wLe">
+    <!-- Favicon-link -->
+    <link rel="shortcut icon" href="assets/upload/logo/ES7dCmSp8WHcdVbDCySZU9JXVhkMOH.webp"
+          type="image/x-icon">
+    <link rel="stylesheet" href="assets/themes/light/css/all.min.css">
+<link rel="stylesheet" href="assets/themes/light/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/themes/light/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/themes/light/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="assets/themes/light/css/slick.css">
+<link rel="stylesheet" href="assets/themes/light/css/slick-theme.css">
+<link rel="stylesheet" href="assets/themes/light/css/select2.min.css">
+<link rel="stylesheet" href="assets/themes/light/css/nouislider.min.css">
+<link rel="stylesheet" href="assets/themes/light/css/wallet-balance.css">
+<link rel="stylesheet" href="assets/themes/light/css/style.css">
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Retrieve default theme and changeable mode from server-side variables
+            let defaultTheme = "1"; // e.g., 'dark' or 'light'
+            let changeable = "1"; // e.g., 1 for changeable, 0 for not
+
+            // If the theme is not changeable, set the default theme in localStorage
+            if (changeable != 1) {
+                localStorage.setItem('dark-theme', defaultTheme);
+            }
+
+            // Apply the theme on page load
+            setTheme();
+
+        });
+    </script>
+
+
+</head>
+
+<body class="">
+
+<!-- Preloader section start -->
+<div class="loader-wrap">
+    <div class="preloader">
+        <div class="preloader-close">x</div>
+        <div id="handle-preloader" class="handle-preloader">
+            <div class="animation-preloader">
+                <div class="shape shape1">
+                    <img src="assets/themes/light/img/coin/coin-2.png" alt="img">
+                </div>
+                <div class="txt-loading">
+                                            <span data-text-preloader="C" class="letters-loading">
+                                C
+                            </span>
+                                            <span data-text-preloader="o" class="letters-loading">
+                                o
+                            </span>
+                                            <span data-text-preloader="i" class="letters-loading">
+                                i
+                            </span>
+                                            <span data-text-preloader="n" class="letters-loading">
+                                n
+                            </span>
+                                            <span data-text-preloader="e" class="letters-loading">
+                                e
+                            </span>
+                                            <span data-text-preloader="c" class="letters-loading">
+                                c
+                            </span>
+                                            <span data-text-preloader="t" class="letters-loading">
+                                t
+                            </span>
+                                            <span data-text-preloader="r" class="letters-loading">
+                                r
+                            </span>
+                                            <span data-text-preloader="a" class="letters-loading">
+                                a
+                            </span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Preloader section end -->
+
+
+
+<div class="custom-sidebar">
+    <div class="wallet-box">
+        <h4 class="mb-20">Assets</h4>
+        <div class="d-flex justify-content-between gap-4 mb-30">
+            <div>
+                <h5 class="mb-0">USD</h5>
+                <small>Market Value</small>
+            </div>
+            <div class="text-end">
+                <h5 class="mb-0" id="totalUsdValue">$0</h5>
+                <small>Total Balance</small>
+            </div>
+        </div>
+        <div class="wallet-item-container" id="showAssetsBalance">
+
+        </div>
+    </div>
+
+    </div>
+
+<script>
+    'use strict';
+    window.onload = function () {
+        var totalUsdValue = 0;
+        var route = "https://coinectra.bugfinder.app/user/deposit";
+
+        async function fetchData() {
+            try {
+                const response = await axios.get('https://coinectra.bugfinder.app/get/assets/balance');
+                if (response.data.status === 'success') {
+                    let wallets = response.data.wallets;
+                    let html = "";
+
+                    wallets.forEach(wallet => {
+                        let walletRoute = route + '/' + wallet.crypto_currency.code;
+                        html += `<div class="wallet-item">
+                <div class="left-side">
+                    <a href="https://coinectra.bugfinder.app/${walletRoute}" class="deposit-btn" title="Deposit"
+                    ><i class="fa-regular fa-arrow-up"></i></a>
+                </div>
+                <div class="middle-side">
+                    <div class="img-box">
+                        <img src="https://coinectra.bugfinder.app/${wallet.crypto_currency.image_path}" alt="..."/>
+                    </div>
+                    <div>
+                        <h5 class="mb-0">${wallet.crypto_currency.code}</h5>
+                        <small>${wallet.crypto_currency.currency_name}</small>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <h5 class="mb-0">${wallet.balance}</h5>
+                    <small>$${dollarEquivalent(wallet.balance, wallet.crypto_currency.usd_rate)}</small>
+                </div>
+            </div>`;
+                    });
+
+                    $('#showAssetsBalance').html(html);
+                    totalUsdCount();
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        function dollarEquivalent(amount, rate) {
+            if (!amount || !rate) return "0";
+            let usdValue = (parseFloat(amount) * parseFloat(rate)).toFixed(2);
+            totalUsdValue += parseFloat(usdValue);
+
+            return usdValue;
+        }
+
+        function totalUsdCount() {
+            $('#totalUsdValue').text(`$${(totalUsdValue).toFixed(2)}`)
+        }
+
+        fetchData();
+    };
+</script>
+
+<!-- Header top section start -->
+
+<style>
+    .offer-banner-seciton .offer-overlay {
+        background: linear-gradient(rgba(92,92,240,0.8), rgba(92,92,240,0.8));
+    }
+</style>
+
+
+    <div class="offer-banner-seciton d-none d-lg-block">
+        <button type="button" onclick="closeAnnouncement()" class="offer-close-btn">
+            <i class="fa-regular fa-xmark"></i>
+        </button>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 gap-3 justify-content-center align-items-center d-flex">
+                    Exchange crypto for a 0% service fee in the app! Exclusive offer for your next exchange.
+                                            <a href="https://bugfinder.net/" class="offer-btn">Get in app</a>
+                                    </div>
+            </div>
+        </div>
+        <div class="offer-overlay"></div>
+    </div>
+
+
+    <div class="mobile-offer-banner d-lg-none">
+        <button type="button" onclick="closeAnnouncement()" class="offer-close-btn">
+            <i class="fa-regular fa-xmark"></i>
+        </button>
+        <div class="gap-3 justify-content-center align-items-center d-flex flex-column">
+            Exchange crypto for a 0% service fee in the app! Exclusive offer for your next exchange.
+                            <a href="https://bugfinder.net/" class="offer-btn">Get in app</a>
+                    </div>
+        <div class="mobile-offer-banner-inner">
+        </div>
+    </div>
+<!-- Header top section end -->
+
+<!-- Nav section start -->
+<nav class="navbar sticky-top navbar-expand-lg transparent">
+    <div class="container">
+        <a class="navbar-brand logo" href="language/es.html"><img
+                src="assets/upload/logo/8JoZrpkenooJnSO71u5TgouLU2YcAZ.webp" alt="..." id="logoSet"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+            <i class="fa-light fa-list"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="language/es.html"><img class="logo"
+                                                                 src="assets/upload/logo/8JoZrpkenooJnSO71u5TgouLU2YcAZ.webp"
+                                                                 alt="..." id="logoSetMobile"></a>
+                <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><i class="fa-light fa-arrow-right"></i></button>
+            </div>
+            <div class="offcanvas-body align-items-center justify-content-between">
+                <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-link text-capitalize " href="language/es.html">Home</a></li><li><a class="nav-link text-capitalize " href="about.html">About</a></li><li><a class="nav-link text-capitalize " href="feature.html">Feature</a></li><li><a class="nav-link text-capitalize " href="blog.html">Blog</a></li><li><a class="nav-link text-capitalize " href="faq.html">FAQ</a></li><li><a class="nav-link text-capitalize " href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-right">
+            <ul class="custom-nav">
+                                    <li class="nav-item">
+                        <a class="nav-link login-btn" href="login.html"><i
+                                class="login-icon fa-light fa-right-to-bracket"></i><span
+                                class="d-none d-md-block">Login</span></a>
+                    </li>
+                                
+                                    <li>
+                        <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                            <i class="fa-regular fa-moon" id="moon"></i>
+                            <i class="fa-regular fa-sun-bright" id="sun"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    'use strict'
+
+    function closeAnnouncement() {
+        $.ajax({
+            type: 'GET',
+            url: "https://coinectra.bugfinder.app/close/announcement",
+            success: function (data) {
+                window.location.href = data.url;
+            },
+            error: function () {
+            }
+        });
+    }
+</script>
+<!-- Nav section end -->
+<!-- Banner section start -->
+    <!-- Banner section end -->
+    <!-- Hero section start -->
+<div class="hero-section">
+    <div class="hero-section-inner">
+        <div class="container">
+            <div class="row g-4 g-sm-5 justify-content-between align-items-center">
+                                    <div class="col-xxl-6 col-lg-6">
+                        <div class="hero-content">
+                            <h1 class="hero-title">Exchange Any Crypto Securely <span
+                                    class="highlight">And Easily</span>
+                            </h1>
+                            <p class="hero-description">Empower Your Financial Future with Crypto: Buy, Sell, and Exchange Your Way to Success!</p>
+                            <div class="btn-area">
+                                <a href="https://bugfinder.net/"
+                                   class="cmn-btn">Get Started</a>
+                                <a href="https://www.youtube.com/@bugfinder3340" class="cmn-btn2 text-with-icon"><i
+                                        class="fa-regular fa-circle-play"></i>Watch Now                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="col-xxl-5 col-lg-6">
+                    <div class="calculator-section">
+                        <form class="calculator" action="https://coinectra.bugfinder.app/exchange/request" method="POST"
+                              id="submitFormId">
+                            <input type="hidden" name="_token" value="TljtgXaQm120O9L87Rp6QL1AwpedqoAr7i977wLe" autocomplete="off">                            <div class="autoplay" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                                            <div class="calculator-banner announceClass"
+                                             data-heading="Hottest rates for USDT/BTC, USDT/ETH swaps"
+                                             data-des="<p>Enjoy a cost-effective way to swap the same stablecoin cross-chain, at a 1:1 exchange rate.</p><p> For example, you can convert <b>USDT-ERC20</b> to<b> USDT-TRC20</b>.</p><p> Please note that network and service fees apply.</p><p><b> Stablecoins participating in the promotion: USDT, USDC, TUSD.</b></p>">
+                                            <div class="calculator-banner-wrapper">
+                                                <div class="left-side">
+                                                    <div class="image-area">
+                                                        <img src="assets/upload/coinAnnounce/KUWDtctzLCEsP9etbmK9pKJgPPEBUB.webp"
+                                                             alt="...">
+                                                    </div>
+                                                    <div class="text-area">
+                                                        <p class="fw-bold mb-0">Hottest rates for USDT/BTC, USDT/ETH swaps</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-side">
+                                                    <i class="fa-regular fa-angle-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="calculator-banner announceClass"
+                                             data-heading="1:1 rate for stablecoin swaps: same coin, any chain"
+                                             data-des="<p>Enjoy a cost-effective way to swap the same stablecoin<span>cross-chain, at a </span><span><b>1:1</b></span><span> exchange rate. For example, you can convert USDT-ERC20 to USDT-TRC20.
+</span></p><p><span>Please note that network and service fees apply.
+</span></p><p><span><b>Stablecoins participating in the promotion:
+USDT, USDC, TUSD.</b></span></p>">
+                                            <div class="calculator-banner-wrapper">
+                                                <div class="left-side">
+                                                    <div class="image-area">
+                                                        <img src="assets/upload/coinAnnounce/NTphKPkY1d2OUnpL4wHi2UWc0K8sDg.webp"
+                                                             alt="...">
+                                                    </div>
+                                                    <div class="text-area">
+                                                        <p class="fw-bold mb-0">1:1 rate for stablecoin swaps: same coin, any chain</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right-side">
+                                                    <i class="fa-regular fa-angle-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                                </div>
+
+                            <div class="calculator-body">
+                                <div class="cmn-tabs">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-exchange-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-exchange" type="button"
+                                                    role="tab" aria-controls="pills-exchange"
+                                                    aria-selected="true">Exchange                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-Buy-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-exchange" type="button" role="tab"
+                                                    aria-controls="pills-exchange" aria-selected="false">Buy                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-Sell-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-exchange" type="button" role="tab"
+                                                    aria-controls="pills-exchange" aria-selected="false">Sell                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-exchange" role="tabpanel"
+                                             aria-labelledby="pills-exchange-tab" tabindex="0">
+                                            <div class="row" id="showLoader">
+    <div class="col-12">
+        <div class="input-amount-box" id="inputAmountBox">
+            <span class="linear-gradient"></span>
+            <div class="input-amount-wrapper">
+                <label class="form-label mb-2">You send</label>
+                <div class="input-amount-box-inner"
+                     id="inputAmountBoxInner">
+                    <a href="language/es.html#" class="icon-area" data-bs-toggle="modal"
+                       data-bs-target="#calculator-modal">
+                        <img class="img-flag" id="showSendImage"
+                             src="language/es.html"
+                             alt="...">
+                    </a>
+                    <div class="text-area w-100">
+                        <div
+                            class="d-flex gap-3 justify-content-between">
+                            <a href="language/es.html#"
+                               class="d-flex align-items-center gap-1"
+                               data-bs-toggle="modal"
+                               data-bs-target="#calculator-modal">
+                                <div class="title" id="showSendCode"></div>
+                                <i class="fa-regular fa-angle-down"></i>
+                            </a>
+                            <input type="text"
+                                   name="exchangeSendAmount" id="send" placeholder="You send"
+                                   onkeyup="this.value = this.value.replace (/^\.|[^\d\.]/g, '')" required>
+                            <input type="hidden" name="exchangeSendCurrency" value="">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="sub-title" id="showSendName"></div>
+                            <div class="fw-500 text-danger" id="exchangeMessage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swap-area">
+            <div class="swap-icon" id="swapBtn">
+                <i class="fa-regular fa-arrow-up-arrow-down"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-12">
+        <div class="input-amount-box" id="inputAmountBox2">
+            <span class="linear-gradient"></span>
+            <div class="input-amount-wrapper">
+                <label class="form-label mb-2">You get</label>
+                <div class="input-amount-box-inner"
+                     id="inputAmountBoxInner2">
+                    <a href="language/es.html#" class="icon-area" data-bs-toggle="modal"
+                       data-bs-target="#calculator-modal2">
+                        <img class="img-flag" id="showGetImage"
+                             src="language/es.html"
+                             alt="...">
+                    </a>
+                    <div class="text-area w-100">
+                        <div
+                            class="d-flex gap-3 justify-content-between">
+                            <a href="language/es.html#"
+                               class="d-flex align-items-center gap-1"
+                               data-bs-toggle="modal"
+                               data-bs-target="#calculator-modal2">
+                                <div class="title" id="showGetCode"></div>
+                                <i class="fa-regular fa-angle-down"></i>
+                            </a>
+                            <input type="text"
+                                   name="exchangeGetAmount" id="receive" placeholder="You get"
+                                   onkeyup="this.value = this.value.replace (/^\.|[^\d\.]/g, '')" required>
+                            <input type="hidden" name="exchangeGetCurrency" value="">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="sub-title" id="showGetName"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-area">
+        <button type="submit" class="cmn-btn w-100" id="submitBtn">Exchange now</button>
+    </div>
+</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="shape shape1">
+        <img src="assets/themes/light/img/coin/coin-2.png" alt="...">
+    </div>
+</div>
+<!-- Coin Announce Modal Start-->
+<div class="modal fade announcement-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 p-3 pb-0 justify-content-end">
+
+                <button type="button" class="cmn-btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="fa-regular fa-xmark"></i></button>
+            </div>
+            <div class="modal-body text-center" id="announceBodyShow">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Coin Announce Modal End -->
+
+<!-- Modal section start -->
+<div class="modal fade calculator-modal" id="calculator-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header flex-column">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="modal-title" id="staticBackdropLabel">Select a currency</h3>
+                    <button type="button" class="cmn-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-light fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="search-box mt-10">
+                    <input type="text" id="search-input" onkeyup="filterItems('search-input')" class="form-control"
+                           placeholder="Search here...">
+                    <button type="submit" class="search-btn"><i class="far fa-search"></i></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="currency-list" class="currency-list">
+                    <div id="show-send">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade calculator-modal" id="calculator-modal2" data-bs-backdrop="static" data-bs-keyboard="false"
+     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header flex-column">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="modal-title" id="staticBackdropLabel">Select a currency</h3>
+                    <button type="button" class="cmn-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-light fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="search-box mt-10">
+                    <input type="text" id="search-input2" onkeyup="filterItems2('search-input2')" class="form-control"
+                           placeholder="Search here...">
+                    <button type="submit" class="search-btn"><i class="far fa-search"></i></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="currency-list2" class="currency-list">
+                    <div id="show-get">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal section end -->
+
+
+
+                    
+                    
+                    <section class="about-section">
+        <div class="container">
+            <div class="row g-4 g-sm-5">
+                <div class="col-lg-6">
+                    <div class="about-thum">
+                        
+                        <img class="img-1" src="assets/upload/contents/img-2.png" alt="">
+                        <img class="img-2" src="assets/upload/contents/fortnite-battle-royale-game2.png"
+                            alt="">
+                        <img class="star" src="assets/upload/contents/star.png" alt="">
+                        <img class="dot" src="assets/upload/contents/dot.png" alt="">
+                        <a href="language/es.html" class="round-box-content">
+                            <span class="curved-circle">marketplace &nbsp;by &nbsp;sell &nbsp;exchange&nbsp; p2p</span>
+                            <div class="inner-icon">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content mx-auto">
+                        <h2 class="section-title">
+                            Safety, Simplicity, and <span class="highlight">Market Excellence</span>
+                        </h2>
+                        <p class="cmn-para-text"><p>At CoinEctra, we're on a mission to make cryptocurrency trading and
+                            investment accessible, secure, and user-friendly for everyone. Founded by a team of
+                            passionate crypto enthusiasts, our platform was created with the vision of empowering
+                            individuals to explore the exciting world of digital currencies.</p>
+                        <div class="cmn-item mt-20">
+                            <h4>Who We Are </h4>
+                            <p>We are a team of blockchain and cryptocurrency experts with years
+                                of experience in the industry. Our diverse backgrounds in finance, technology, and
+                                security enable us to provide you with a platform that prioritizes safety, transparency,
+                                and innovation.</p></div></p>
+                    </div>
+                    <div class="btn-area">
+                        <a href="https://bugfinder.net/" class="cmn-btn">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-shape1"></div>
+        <div class="shape shape2 opacity-100">
+            <img src="assets/themes/light/img/coin/5.png" alt="...">
+        </div>
+    </section>
+<!-- About section end -->
+
+                    
+                    
+                    <!-- Feature section start -->
+    <section class="feature-section">
+        <div class="feature-section-inner">
+            <div class="container">
+                <div class="row g-4 g-xxl-5 align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="section-header">
+                            <h2 class="section-title"><span class="highlight">Benefits</span> We Offer                            </h2>
+                            <p class="cmn-para-text mx-auto">Connect your money to your friends &amp; family from anywhere, anytime regardless any delay. Lorem ipsum Nullana integer sagittis, eleifend. met, aliquere.</p>
+                        </div>
+                                                    <div class="row g-3">
+                                                                    <div class="col-12">
+                                        <div class="cmn-box">
+                                            <div class="icon-box">
+                                                <i class="fa-light fa-chart-line-up"></i>
+                                            </div>
+                                            <div class="text-box">
+                                                <h5>Spot &amp; Margin</h5>
+                                                <span>Trade 500+ pairs with up to 5x leverage</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-12">
+                                        <div class="cmn-box">
+                                            <div class="icon-box">
+                                                <i class="fa-light fa-scroll"></i>
+                                            </div>
+                                            <div class="text-box">
+                                                <h5>Derivatives</h5>
+                                                <span>100+ perpetuals and quarterly futures with up to 20x leverage</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-12">
+                                        <div class="cmn-box">
+                                            <div class="icon-box">
+                                                <i class="fa-light fa-piggy-bank"></i>
+                                            </div>
+                                            <div class="text-box">
+                                                <h5>Lockup &amp; Earn</h5>
+                                                <span>Earn daily rewards on your balance, no lock-up period</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-12">
+                                        <div class="cmn-box">
+                                            <div class="icon-box">
+                                                <i class="fa-sharp fa-light fa-earth-americas"></i>
+                                            </div>
+                                            <div class="text-box">
+                                                <h5>Trading Arena</h5>
+                                                <span>Prize pools worth up to USD 1,000,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            </div>
+                                            </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="feature-thumbs">
+                            
+                            <div class="orbit">
+                                <img src="assets/upload/contents/orbit.png" alt="">
+                            </div>
+                            <div class="bitcoin">
+                                <img src="assets/upload/contents/bitcoin.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradiend1">
+            <div class="bg-gradiend1-inner"></div>
+        </div>
+        <div class="shape shape3 opacity-100">
+            <img src="assets/themes/light/img/coin/5.png" alt="...">
+        </div>
+    </section>
+<!-- Feature section end -->
+
+                    
+                    
+                    <!-- How it works section start -->
+
+    <section class="how-it-work">
+        <div class="container">
+            <div class="row g-4 g-xxl-5 align-items-center">
+                                    <div class="col-xxl-5 col-lg-6">
+                        <div class="how-it-work-thumbs">
+                            
+                            <img class="img-1" src="assets/upload/contents/work-process-img.png" alt="">
+                            <div class="border-round">
+                                <img class="" src="assets/upload/contents/border-round.png" alt="">
+                            </div>
+                            <div class="img-info-box">
+                                <div class="icon-box">
+                                    <i class="fa-regular fa-gear"></i>
+                                </div>
+                                <div class="text-box">Our working process</div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="col-xxl-7 col-lg-6">
+                                            <div class="section-header">
+                            <h2 class="section-title">Buy Cryptocurrency in                                <span class="highlight">Just a Few Simple Steps</span>
+                            </h2>
+                            <p class="cmn-para-text">Buying crypto on CoinEctra is secure and straightforward. Here's how you can do it:</p>
+                        </div>
+                                                                <div class="cmn-list">
+                                                            <div class="item">
+                                    <div class="number">1</div>
+                                    <div class="content">
+                                        <h5>Create a CoinEctra Account</h5>
+                                        <p>Sign up on CoinEctra with your email address/phone number and country of residence, then create a strong password to secure your account.</p>
+                                    </div>
+                                </div>
+                                                            <div class="item">
+                                    <div class="number">2</div>
+                                    <div class="content">
+                                        <h5>Verify Your Account</h5>
+                                        <p>Sign up on CoinEctra with your email address/phone number and country of residence, then create a strong password to secure your account.</p>
+                                    </div>
+                                </div>
+                                                            <div class="item">
+                                    <div class="number">3</div>
+                                    <div class="content">
+                                        <h5>Add a Payment Method</h5>
+                                        <p>Add your credit card, debit card, or other payment methods to buy cryptocurrency. KuCoin supports over 70 payment methods.</p>
+                                    </div>
+                                </div>
+                                                            <div class="item">
+                                    <div class="number">4</div>
+                                    <div class="content">
+                                        <h5>Buy Cryptocurrency</h5>
+                                        <p>You can now easily and securely purchase Bitcoin and other cryptocurrencies on KuCoin using USD, EUR, AUD, INR, RUB, and over 48 other local currencies.</p>
+                                    </div>
+                                </div>
+                                                    </div>
+                                    </div>
+            </div>
+        </div>
+        <div class="bg-shape1"></div>
+    </section>
+<!-- How it works section start -->
+
+                    
+                    
+                    <!-- Why choose us section start -->
+    <section class="why-choose-us">
+        <div class="why-choose-us-inner">
+            <div class="container">
+                <div class="row g-4 g-md-5 align-items-center">
+
+                    <div class="col-lg-6">
+                        <div class="why-choose-us-thum">
+                            
+                            <div class="img-1">
+                                <img src="assets/upload/contents/why-choose-us-img-1.png" alt="">
+                            </div>
+                            <div class="img-2">
+                                <img src="assets/upload/contents/why-choose-us-img-2.png" alt="">
+                            </div>
+                            <div class="dot-2">
+                                <img src="assets/upload/contents/dot-2.png" alt="">
+                            </div>
+                            <div class="corner-half">
+                                <img src="assets/upload/contents/corner-half.png" alt="">
+                            </div>
+                            <div class="img-info-box">
+                                <div class="title"><span>10</span> Years</div>
+                                <p class="sub-title mb-0">Of Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ">
+                                                    <div class="section-header">
+                                <h2 class="section-title"><span class="highlight">Why</span>
+                                    invest in CoinEctra                                </h2>
+                                <p class="cmn-para-text mx-auto">Connect your money to your friends &amp; family from anywhere, anytime regardless any delay. Lorem ipsum Nullana integer sagittis, eleifend. met, aliquere.</p>
+                            </div>
+                                                                            <div class="row g-3">
+                                                                    <div class="col-12">
+                                        <div class="cmn-box">
+                                            <div class="icon-box">
+                                                <i class="fa-light fa-shield-check"></i>
+                                            </div>
+                                            <div class="text-box">
+                                                <h5>Security First</h5>
+                                                <span>We prioritize the security of your cryptocurrency holdings above all else.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-12">
+                                        <div class="cmn-box">
+                                            <div class="icon-box">
+                                                <i class="fa-sharp fa-light fa-earth-americas"></i>
+                                            </div>
+                                            <div class="text-box">
+                                                <h5>Global Reach</h5>
+                                                <span>CoinEctra serves a global community of cryptocurrency enthusiasts.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-12">
+                                        <div class="cmn-box">
+                                            <div class="icon-box">
+                                                <i class="fa-light fa-user-group"></i>
+                                            </div>
+                                            <div class="text-box">
+                                                <h5>User-Friendly Interface</h5>
+                                                <span>Whether you're a beginner or a seasoned trader, our intuitive platform makes buying, selling, and exchanging cryptocurrencies a breeze.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="col-12">
+                                        <div class="cmn-box">
+                                            <div class="icon-box">
+                                                <i class="fa-light fa-handshake"></i>
+                                            </div>
+                                            <div class="text-box">
+                                                <h5>Compliance and Trust</h5>
+                                                <span>CoinEctra adheres to strict regulatory standards, giving you peace of mind.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradiend2">
+            <div class="bg-gradiend2-inner"></div>
+        </div>
+    </section>
+<!-- Why choose us section end -->
+
+                    
+                    
+                    <!-- Faq section start -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="row g-4 g-sm-5 align-items-center">
+                                    <div class="col-lg-6">
+                        <div class="faq-thum">
+                            
+                            <div class="faq-img">
+                                <img src="assets/upload/contents/faq-img.png" alt="">
+                            </div>
+                            <div class="question-mark">
+                                <img src="assets/upload/contents/question-mark.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                                <div class="col-lg-6">
+                    <div class="faq-content">
+                                                    <div class="section-header">
+                                <h2 class="section-title">Still, have questions?</h2>
+                                <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, facere incidunt dolorum illum nesciunt eaque.</p>
+                            </div>
+                                                                            <div class="accordion" id="accordionExample2">
+                                                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headin0">
+                                            <button class="accordion-button "
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse0" aria-expanded="true"
+                                                aria-controls="collapse0">
+                                                How does the exchange service work?                                            </button>
+                                        </h2>
+                                        <div id="collapse0"
+                                            class="accordion-collapse collapse show"
+                                            aria-labelledby="headin0"
+                                            data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <div class="table-responsive">
+                                                    <p>An exchange service facilitates swapping one item or currency for another. Users submit what they want to exchange and what they desire in return. The service matches these requests, enabling the trade to occur. Whether it's cryptocurrencies, goods, or services, exchanges provide a platform for seamless transactions between parties.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headin1">
+                                            <button class="accordion-button collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse1" aria-expanded="true"
+                                                aria-controls="collapse1">
+                                                How long does it take for a exchange to be processed?                                            </button>
+                                        </h2>
+                                        <div id="collapse1"
+                                            class="accordion-collapse collapse "
+                                            aria-labelledby="headin1"
+                                            data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <div class="table-responsive">
+                                                    <p>The processing time for an exchange varies depending on factors like the platform used, transaction volume, and network speed. It can range from a few minutes to several hours, sometimes longer for complex transactions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headin2">
+                                            <button class="accordion-button collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse2" aria-expanded="true"
+                                                aria-controls="collapse2">
+                                                Can I track the status of my exchange?                                            </button>
+                                        </h2>
+                                        <div id="collapse2"
+                                            class="accordion-collapse collapse "
+                                            aria-labelledby="headin2"
+                                            data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <div class="table-responsive">
+                                                    <p>Yes, you can track the status of your crypto exchange through our tracking. We also provide email notifications for important updates during the exchange process.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headin3">
+                                            <button class="accordion-button collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse3" aria-expanded="true"
+                                                aria-controls="collapse3">
+                                                Is my personal and financial information safe on your website?                                            </button>
+                                        </h2>
+                                        <div id="collapse3"
+                                            class="accordion-collapse collapse "
+                                            aria-labelledby="headin3"
+                                            data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <div class="table-responsive">
+                                                    <p>Yes, we take the security of your personal and financial information seriously. Our website employs robust encryption protocols and follows industry best practices to safeguard your data from unauthorized access or misuse.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headin4">
+                                            <button class="accordion-button collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse4" aria-expanded="true"
+                                                aria-controls="collapse4">
+                                                What payment methods do you support for sell crypto?                                            </button>
+                                        </h2>
+                                        <div id="collapse4"
+                                            class="accordion-collapse collapse "
+                                            aria-labelledby="headin4"
+                                            data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <div class="table-responsive">
+                                                    <p>We offer nearly 32 fiat gateway methods and ensure fiat transfers are completed within 10 minutes, guaranteeing swift and convenient transactions for our users.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headin5">
+                                            <button class="accordion-button collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse5" aria-expanded="true"
+                                                aria-controls="collapse5">
+                                                Are there any fees associated with sending or receiving crypto?                                            </button>
+                                        </h2>
+                                        <div id="collapse5"
+                                            class="accordion-collapse collapse "
+                                            aria-labelledby="headin5"
+                                            data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                <div class="table-responsive">
+                                                    <p>Yes, there might be fees associated with crypto exchange. The applicable fees will be displayed before you confirm the trade.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-shape1"></div>
+    </section>
+<!-- Faq section end -->
+
+                    
+                    
+                    <!-- Testimonial section start -->
+    <section class="testimonial-section">
+        <div class="container">
+                            <div class="row">
+                    <div class="section-header mb-50 text-center">
+                        <h2 class="">what our <span
+                                class="highlight">Clients Say</span>
+                        </h2>
+                        <p class="cmn-para-text m-auto">Help agencies to define their new business objectives and then create professional software. Lorem ipsum, dolor sit amet</p>
+                    </div>
+                </div>
+                                        <div class="row">
+                    <div class="owl-carousel owl-theme testimonial-carousel">
+                                                    <div class="item">
+                                <div class="testimonial-box">
+                                    <div class="testimonial-header">
+                                        <div class="testimonial-title-area">
+                                            <div class="testimonial-thumbs">
+                                                <img
+                                                    src="assets/upload/contents/WJSRnehIJKvenWRDKhkpBWFj0YRE48.avif"
+                                                    alt="..."/>
+                                            </div>
+                                            <div class="testimonial-title">
+                                                <h5 class="mb-0">Mitsubishi</h5>
+                                                <p>Tokyo, Japan</p>
+                                            </div>
+                                        </div>
+                                                                                    <ul class="ratings">
+                                                <li>
+                                                                                                                                                                <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                                                                        <i class="fa-solid fa-star"></i>
+                                                                                                    </li>
+                                            </ul>
+                                                                            </div>
+                                    <div class="quote-area">
+                                        <p>We highly appreciate this exceptional crypto exchange platform for its efficiency and user-friendly interface, making it an invaluable tool for exchanging cryptocurrencies seamlessly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="testimonial-box">
+                                    <div class="testimonial-header">
+                                        <div class="testimonial-title-area">
+                                            <div class="testimonial-thumbs">
+                                                <img
+                                                    src="assets/upload/contents/agGyHM6uu4CUTZ9XM68GiKTUOGPywJ.avif"
+                                                    alt="..."/>
+                                            </div>
+                                            <div class="testimonial-title">
+                                                <h5 class="mb-0">Tom Haris</h5>
+                                                <p>New York, USA</p>
+                                            </div>
+                                        </div>
+                                                                                    <ul class="ratings">
+                                                <li>
+                                                                                                                                                                <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                                                                </li>
+                                            </ul>
+                                                                            </div>
+                                    <div class="quote-area">
+                                        <p>The administration here is remarkably swift with exchanges. I received my completed exchange in just 5 minutes. Highly impressive!. Go and get your future assets</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="testimonial-box">
+                                    <div class="testimonial-header">
+                                        <div class="testimonial-title-area">
+                                            <div class="testimonial-thumbs">
+                                                <img
+                                                    src="assets/upload/contents/6YKNA9H4A3EBt19kahDrdpmICnqj2h.avif"
+                                                    alt="..."/>
+                                            </div>
+                                            <div class="testimonial-title">
+                                                <h5 class="mb-0">Jim Morison</h5>
+                                                <p>London, UK</p>
+                                            </div>
+                                        </div>
+                                                                                    <ul class="ratings">
+                                                <li>
+                                                                                                                                                                <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                                                                </li>
+                                            </ul>
+                                                                            </div>
+                                    <div class="quote-area">
+                                        <p>Their support team is incredibly helpful, responding to inquiries within minutes. It's remarkable how prompt and efficient their assistance is.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="testimonial-box">
+                                    <div class="testimonial-header">
+                                        <div class="testimonial-title-area">
+                                            <div class="testimonial-thumbs">
+                                                <img
+                                                    src="assets/upload/contents/aOqZ538AbI1TDU8gZyfBrxmL1r34pr.avif"
+                                                    alt="..."/>
+                                            </div>
+                                            <div class="testimonial-title">
+                                                <h5 class="mb-0">Alex Cruis</h5>
+                                                <p>Dublin, Ireland</p>
+                                            </div>
+                                        </div>
+                                                                                    <ul class="ratings">
+                                                <li>
+                                                                                                                                                                <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                                                                        <i class="fa-solid fa-star"></i>
+                                                                                                    </li>
+                                            </ul>
+                                                                            </div>
+                                    <div class="quote-area">
+                                        <p>We highly appreciate this exceptional crypto exchange platform for its efficiency and user-friendly interface, making it an invaluable tool for exchanging cryptocurrencies seamlessly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="testimonial-box">
+                                    <div class="testimonial-header">
+                                        <div class="testimonial-title-area">
+                                            <div class="testimonial-thumbs">
+                                                <img
+                                                    src="assets/upload/contents/0tEVHYkgXIjxziaI0fGC7kb5Lf2FDX.avif"
+                                                    alt="..."/>
+                                            </div>
+                                            <div class="testimonial-title">
+                                                <h5 class="mb-0">Alex Cruis</h5>
+                                                <p>Sydney, Australia</p>
+                                            </div>
+                                        </div>
+                                                                                    <ul class="ratings">
+                                                <li>
+                                                                                                                                                                <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                    <i class="active fa-solid fa-star"></i>
+                                                                                                                                                                                                                </li>
+                                            </ul>
+                                                                            </div>
+                                    <div class="quote-area">
+                                        <p>The administration here is remarkably swift with exchanges. I received my completed exchange in just 5 minutes. Highly impressive!. Go and get your future assets</p>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+                    </div>
+        <div class="shape shape2">
+            <img src="assets/themes/light/img/coin/coin-1.png" alt="...">
+        </div>
+    </section>
+<!-- Testimonial section end -->
+
+                    
+                    
+                    <!-- Blog Section start -->
+    <section class="blog-section">
+        <div class="container">
+                            <div class="row">
+                    <div class="col-12">
+                        <div class="section-header text-center mb-50">
+                            <h2 class="section-title mx-auto">Latest Blogs &amp; Articles</h2>
+                            <p class="cmn-para-text mx-auto">In today's fast-paced world, managing Travellerments can become a tedious and time-consuming task. Fortunately, with the advent of online payment services.</p>
+                        </div>
+                    </div>
+                </div>
+                                                        <div class="row g-4 g-sm-5">
+                    <div class="col-lg-5 order-2 order-lg-1">
+                        <div class="row g-4 g-sm-5">
+                                                                                                                                                                                                                                    <div class="col-12">
+                                    <div class="blog-box">
+                                        <div class="thumbs-area">
+                                            <img
+                                                src="assets/upload/contents/fRJ74BABUf4071SS3BXTFI3RZ0fHX5.avif"
+                                                alt="...">
+                                            <div class="blog-date">
+                                                <h5>08</h5>
+                                                <p>Nov</p>
+                                            </div>
+                                        </div>
+                                        <div class="content-area">
+                                            <h4 class="blog-title"><a
+                                                    href="blog-details@id=37&amp;slug=keep-your-cryptocurrency-safe.html">Keep Your Cryptocurrency Safe</a>
+                                            </h4>
+                                            <p class="description">Share data on the carbon footprint of travel, eco-friendly destinations, and sustainable travel practices. Lorem ip...</p>
+
+                                            <a href="blog-details@id=37&amp;slug=keep-your-cryptocurrency-safe.html"
+                                               class="blog-btn link">Read more<i
+                                                    class="fa-light fa-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-12">
+                                    <div class="blog-box">
+                                        <div class="thumbs-area">
+                                            <img
+                                                src="assets/upload/contents/CmIOR5kYAznCIVDqUrM4P6XCBJ1JOP.avif"
+                                                alt="...">
+                                            <div class="blog-date">
+                                                <h5>09</h5>
+                                                <p>Nov</p>
+                                            </div>
+                                        </div>
+                                        <div class="content-area">
+                                            <h4 class="blog-title"><a
+                                                    href="blog-details@id=36&amp;slug=understanding-the-basics-a-beginners-guide-to-cryptocurrency.html">Understanding the Basics: A Beginner&#039;s Guide to Cryptocurrency</a>
+                                            </h4>
+                                            <p class="description">Share data on the carbon footprint of travel, eco-friendly destinations, and sustainable travel practices. Lorem ip...</p>
+
+                                            <a href="blog-details@id=36&amp;slug=understanding-the-basics-a-beginners-guide-to-cryptocurrency.html"
+                                               class="blog-btn link">Read more<i
+                                                    class="fa-light fa-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                                                                                            <div class="col-12">
+                                    <div class="blog-box">
+                                        <div class="thumbs-area">
+                                            <img
+                                                src="assets/upload/contents/SaeGLG8UTrOJLPimXebt5psvGkTXhZ.avif"
+                                                alt="...">
+                                            <div class="blog-date">
+                                                <h5>06</h5>
+                                                <p>Nov</p>
+                                            </div>
+                                        </div>
+                                        <div class="content-area">
+                                            <h4 class="blog-title"><a
+                                                    href="blog-details@id=35&amp;slug=tips-for-success-in-the-cryptocurrency-market.html">Tips for Success in the Cryptocurrency Market</a>
+                                            </h4>
+                                            <p class="description">Share data on the carbon footprint of travel, eco-friendly destinations, and sustainable travel practices. Lorem ip...</p>
+
+                                            <a href="blog-details@id=35&amp;slug=tips-for-success-in-the-cryptocurrency-market.html"
+                                               class="blog-btn link">Read more<i
+                                                    class="fa-light fa-arrow-up-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                    </div>
+                    </div>
+                                                                <div class="col-lg-7 order-1 order-lg-2">
+                            <div class="blog-box-large">
+                                <div class="thumbs-area">
+                                    <img
+                                        src="assets/upload/contents/vAf4LgvZmVaZRSdexq1QARoa1yAoNe.avif"
+                                        alt="...">
+                                    <div class="blog-date">
+                                        <h5>09</h5>
+                                        <p>Nov</p>
+                                    </div>
+                                </div>
+                                <div class="content-area">
+                                    <h4 class="blog-title"><a
+                                            href="blog-details@id=38&amp;slug=the-rise-of-altcoins-exploring-alternative-cryptocurrencies.html">The Rise of Altcoins: Exploring Alternative Cryptocurrencies</a>
+                                    </h4>
+
+                                    <p class="description">Share data on the carbon footprint of travel, eco-friendly destinations, and sustainable travel practices. Lorem ip...</p>
+
+                                    <a href="blog-details@id=38&amp;slug=the-rise-of-altcoins-exploring-alternative-cryptocurrencies.html"
+                                       class="blog-btn link">Read more<i
+                                            class="fa-regular fa-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+                    </div>
+        <div class="shape shape3">
+            <img src="assets/themes/light/img/coin/coin-3.png" alt="...">
+        </div>
+    </section>
+<!-- Blog Section end -->
+
+                    
+                    
+                    <!-- Newsletter section start -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row g-4 align-items-center justify-content-center">
+                <div class="col-xl-5 col-lg-7">
+                    <div class="content-area">
+                                                    <h3 class="subscribe-normal-text">Subscribe to our mailing list and stay up to date</h3>
+                            <p class="subscribe-small-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, hic!</p>
+                                                <form action="https://coinectra.bugfinder.app/subscribe" method="post" class="newsletter-form">
+                            <input type="hidden" name="_token" value="TljtgXaQm120O9L87Rp6QL1AwpedqoAr7i977wLe" autocomplete="off">                            <input type="email" name="email" value="" class="form-control" placeholder="Your email"/>
+                            <button type="submit" class="subscribe-btn">Subscribe</button>
+                        </form>
+                                            </div>
+                </div>
+                <div class="col-md-5 d-none d-lg-block">
+                    <div class="newsletter-thumbs">
+                        <img src="assets/upload/contents/TGKh7rXt5aBxLPPwaJjjMfbxHsUFJ9.avif" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Newsletter section end -->
+
+                    
+                    
+                    
+
+
+<!-- Footer Section start -->
+<section class="footer-section pb-50">
+    <div class="footer-inner-section">
+        <div class="container">
+            <div class="row g-4 g-sm-5">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer-widget">
+                        <div class="widget-logo mb-30">
+                            <a href="language/es.html"><img class="logo"
+                                                             src="assets/upload/logo/iycKeohyBLjKn0A3PK6hrdNAmvtpyE.webp"
+                                                             alt="..."></a>
+                        </div>
+                                                    <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga odit excepturi, natus voluptate commodi qui sunt quisquam cupiditate molestiae?
+                            </p>
+                        
+                                                    <div class="social-area mt-50">
+                                <ul class="d-flex">
+                                                                            <li><a href="https://www.facebook.com/"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                                                            <li><a href="https://twitter.com/"><i
+                                                    class="fab fa-twitter"></i></a></li>
+                                                                            <li><a href="https://linkedin.com/"><i
+                                                    class="fab fa-linkedin"></i></a></li>
+                                                                            <li><a href="https://www.instagram.com/"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                                                    </ul>
+                            </div>
+                                            </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-widget">
+                        <h5 class="widget-title">Useful Links</h5>
+                        <ul>
+                                                                                                <li><a class="widget-link" href="about.html">About</a></li>
+                                                                    <li><a class="widget-link" href="faq.html">FAQ</a></li>
+                                                                    <li><a class="widget-link" href="blog.html">Blog</a></li>
+                                                                                        <li><a class="widget-link" href="track/trade.html">Tracking</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
+                    <div class="footer-widget">
+                        <h5 class="widget-title">Support Links</h5>
+                        <ul>
+                                                                                                <li><a class="widget-link" href="contact.html">Contact</a></li>
+                                                                    <li><a class="widget-link" href="terms-and-conditions.html">Terms and conditions</a></li>
+                                                                    <li><a class="widget-link" href="privacy-policy.html">Privacy policy</a></li>
+                                                                                    </ul>
+                    </div>
+                </div>
+                                    <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Contact Us</h5>
+                            <p class="contact-item"><i
+                                    class="fa-regular fa-location-dot"></i> 22 Baker Street, London
+                            </p>
+                            <p class="contact-item"><i
+                                    class="fa-regular fa-envelope"></i> demo@example.com
+                            </p>
+                            <p class="contact-item"><i
+                                    class="fa-regular fa-phone"></i> +45345847431324
+                            </p>
+                        </div>
+                    </div>
+                            </div>
+            <hr class="cmn-hr">
+            <!-- Copyright-area-start -->
+            <div class="copyright-area">
+                <div class="row gy-4">
+                    <div class="col-sm-6">
+                        <p>Copyright ©2025 <a
+                                                                href="javascript:void(0)">Coinectra</a> All Rights Reserved                        </p>
+                    </div>
+                                            <div class="col-sm-6">
+                            <div class="language">
+                                                                    <a href="language/en.html"
+                                       class="language">English</a>
+                                                                    <a href="language/es.html"
+                                       class="language">Spanish</a>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+            <!-- Copyright-area-end -->
+        </div>
+    </div>
+
+</section>
+<!-- Footer Section end -->
+
+
+<script src="assets/themes/light/js/jquery-3.6.1.min.js"></script>
+<script src="assets/global/js/notiflix-aio-3.2.6.min.js"></script>
+<script src="assets/themes/light/js/bootstrap.bundle.min.js"></script>
+<script src="assets/global/js/axios.min.js"></script>
+
+<script src="assets/themes/light/js/owl.carousel.min.js"></script>
+<script src="assets/themes/light/js/swiper-bundle.min.js"></script>
+<script src="assets/themes/light/js/slick.min.js"></script>
+<script src="assets/themes/light/js/select2.min.js"></script>
+<script src="assets/themes/light/js/nouislider.min.js"></script>
+<script src="assets/themes/light/js/parallax-scroll.js"></script>
+
+<script src="assets/themes/light/js/main.js"></script>
+
+    
+
+<!--Start of Google analytic Script-->
+<!--End of Google analytic Script-->
+
+
+<!--Start of Tawk.to Script-->
+
+
+<!--start of Facebook Messenger Script-->
+<!--End of Facebook Messenger Script-->
+
+
+<script>
+    var root = document.querySelector(':root');
+    root.style.setProperty('--primary-color', '#5c5cf0');
+    root.style.setProperty('--btn-hover-bg', '#6e6eff');
+    root.style.setProperty('--btn-bg1', '#5c5cf0');
+
+    if (localStorage.getItem('dark-theme') == null) {
+        root.style.setProperty('--loader-color', "#021711");
+    } else if (localStorage.getItem('dark-theme') == 1) {
+        root.style.setProperty('--loader-color', "#021711");
+    } else {
+        root.style.setProperty('--loader-color', "#F3F4F6");
+    }
+
+</script>
+    <script>
+    Notiflix.Block.dots('#showLoader', {
+        backgroundColor: loaderColor,
+    });
+    getExchangeCurrency();
+    var activeTab = "exchange";
+    var activeSendCurrency = "";
+    var activeGetCurrency = "";
+
+    $(document).on("keyup", "input[name='exchangeSendAmount']", function () {
+        let sendAmount = $("input[name='exchangeSendAmount']").val();
+        getCalculation(sendAmount);
+    });
+
+    $(document).on("change", "select[name='exchangeSendCurrency']", function () {
+        let sendAmount = $("input[name='exchangeSendAmount']").val();
+        getCalculation(sendAmount);
+    });
+
+    $(document).on("keyup", "input[name='exchangeGetAmount']", function () {
+        let getAmount = $("input[name='exchangeGetAmount']").val();
+        sendCalculation(getAmount);
+    });
+
+    $(document).on("change", "select[name='exchangeGetCurrency']", function () {
+        let sendAmount = $("input[name='exchangeSendAmount']").val();
+        getCalculation(sendAmount);
+    });
+
+    $(document).on("click", "#swapBtn", function () {
+        let sendAmount = $("input[name='exchangeGetAmount']").val();
+        $("input[name='exchangeSendAmount']").val(sendAmount);
+        getCalculation(sendAmount);
+    });
+
+    $(document).on("click", ".sendModal", function () {
+        activeSendCurrency = $(this).data('res');
+        setSendCurrency(activeSendCurrency);
+        let sendAmount = $("input[name='exchangeSendAmount']").val();
+        getCalculation(sendAmount);
+        $('#calculator-modal').modal('hide');
+
+        $('.sendModal .right-side').empty();
+        $(this).find('.right-side').html('');
+        $(this).find('.right-side').html('<i class="fa-sharp fa-solid fa-circle-check"></i>');
+    });
+
+    $(document).on("click", ".getModal", function () {
+        activeGetCurrency = $(this).data('res');
+        setGetCurrency(activeGetCurrency);
+        let sendAmount = $("input[name='exchangeSendAmount']").val();
+        getCalculation(sendAmount);
+        $('#calculator-modal2').modal('hide');
+
+        $('.getModal .right-side').empty();
+        $(this).find('.right-side').html('');
+        $(this).find('.right-side').html('<i class="fa-sharp fa-solid fa-circle-check"></i>');
+    });
+
+    function getCalculation(sendAmount) {
+        $("#exchangeMessage").text('');
+        $("#submitBtn").attr('disabled', false);
+
+        let sendMinLimit = activeSendCurrency.min_send;
+        let sendMaxLimit = activeSendCurrency.max_send;
+        let sendCode = activeSendCurrency.code;
+        let sendUsdRate = activeSendCurrency.usd_rate;
+        let getUsdRate = activeGetCurrency.usd_rate;
+        let getAmount = getAmountCal(sendAmount, sendUsdRate, getUsdRate);
+        $("input[name='exchangeGetAmount']").val(getAmount);
+
+        if (parseFloat(sendAmount) < parseFloat(sendMinLimit)) {
+            $("#submitBtn").attr('disabled', true);
+            $("#exchangeMessage").text(`Min is ${sendMinLimit} ${sendCode}`);
+        }
+
+        if (parseFloat(sendAmount) > parseFloat(sendMaxLimit)) {
+            $("#submitBtn").attr('disabled', true);
+            $("#exchangeMessage").text(`Max is ${sendMaxLimit} ${sendCode}`);
+        }
+    }
+
+    function getAmountCal(sendAmount, sendUsdRate, getUsdRate) {
+
+        if (activeTab == 'exchange') {
+            return (sendAmount * sendUsdRate / getUsdRate).toFixed(8);
+        } else if (activeTab == 'buy') {
+            return (sendAmount * sendUsdRate / getUsdRate).toFixed(8);
+        } else if (activeTab == 'sell') {
+            return (sendAmount * sendUsdRate / getUsdRate).toFixed(2);
+        }
+    }
+
+    function sendCalculation(getAmount) {
+        $("#exchangeMessage").text('');
+        $("#submitBtn").attr('disabled', false);
+
+        let sendMinLimit = activeSendCurrency.min_send;
+        let sendMaxLimit = activeSendCurrency.max_send;
+        let sendCode = activeSendCurrency.code;
+        let sendUsdRate = activeSendCurrency.usd_rate;
+        let getUsdRate = activeGetCurrency.usd_rate;
+        let sendAmount = sendAmountCal(getAmount, sendUsdRate, getUsdRate);
+        $("input[name='exchangeSendAmount']").val(sendAmount);
+
+        if (parseFloat(sendAmount) < parseFloat(sendMinLimit)) {
+            $("#submitBtn").attr('disabled', true);
+            $("#exchangeMessage").text(`Min is ${sendMinLimit} ${sendCode}`);
+        }
+
+        if (parseFloat(sendAmount) > parseFloat(sendMaxLimit)) {
+            $("#submitBtn").attr('disabled', true);
+            $("#exchangeMessage").text(`Max is ${sendMaxLimit} ${sendCode}`);
+        }
+    }
+
+    function sendAmountCal(getAmount, sendUsdRate, getUsdRate) {
+        if (activeTab == 'exchange') {
+            return (getAmount * getUsdRate / sendUsdRate).toFixed(8);
+        } else if (activeTab == 'buy') {
+            return (getAmount * getUsdRate / sendUsdRate).toFixed(2);
+        } else if (activeTab == 'sell') {
+            return (getAmount * getUsdRate / sendUsdRate).toFixed(8);
+        }
+    }
+
+
+    function getExchangeCurrency(route = "https://coinectra.bugfinder.app/get-exchange/currency") {
+        axios.get(route)
+            .then(function (response) {
+                Notiflix.Block.remove('#showLoader');
+                activeSendCurrency = response.data.selectedSendCurrency;
+                activeGetCurrency = response.data.selectedGetCurrency;
+                setSendCurrency(activeSendCurrency);
+                setGetCurrency(activeGetCurrency);
+                showSend(response.data.sendCurrencies);
+                showGet(response.data.getCurrencies);
+                $("input[name='exchangeSendAmount']").val((response.data.initialSendAmount).toFixed(2));
+                getCalculation(response.data.initialSendAmount);
+            })
+            .catch(function (error) {
+
+            });
+    }
+
+    function showSend(currencies) {
+        $('#show-send').html(``);
+        let options = "";
+        for (let i = 0; i < currencies.length; i++) {
+            let isChecked = (i === 0) ? '<i class="fa-sharp fa-solid fa-circle-check"></i>' : '';
+            options += `<div class="item sendModal" data-res='${JSON.stringify(currencies[i])}'>
+                        <div class="left-side">
+                            <div class="img-area">
+                                <img class="img-flag" src="https://coinectra.bugfinder.app/${currencies[i].image_path}" alt="...">
+                            </div>
+                            <div class="text-area">
+                                <div class="title">${currencies[i].code}</div>
+                                <div class="sub-title">${currencies[i].name}</div>
+                            </div>
+                        </div>
+                        <div class="right-side">${isChecked}</div>
+                    </div>`;
+        }
+        $('#show-send').append(options);
+    }
+
+
+    function setSendCurrency(currency) {
+        $('#showSendImage').attr('src', currency.image_path);
+        $('#showSendCode').text(currency.code);
+        $('#showSendName').text(currency.name);
+
+        $('input[name="exchangeSendCurrency"]').val(currency.id);
+    }
+
+    function setGetCurrency(currency) {
+        $('#showGetImage').attr('src', currency.image_path);
+        $('#showGetCode').text(currency.code);
+        $('#showGetName').text(currency.name);
+
+        $('input[name="exchangeGetCurrency"]').val(currency.id);
+    }
+
+    function showGet(currencies) {
+        $('#show-get').html(``);
+        let options = "";
+        for (let i = 0; i < currencies.length; i++) {
+            let isChecked = (i === 0) ? '<i class="fa-sharp fa-solid fa-circle-check"></i>' : '';
+            options += `<div class="item getModal" data-res='${JSON.stringify(currencies[i])}'>
+                        <div class="left-side">
+                            <div class="img-area">
+                                <img class="img-flag" src="https://coinectra.bugfinder.app/${currencies[i].image_path}" alt="...">
+                            </div>
+                            <div class="text-area">
+                                <div class="title">${currencies[i].code}</div>
+                                <div class="sub-title">${currencies[i].name}</div>
+                            </div>
+                        </div>
+                        <div class="right-side">${isChecked}</div>
+                    </div>`;
+        }
+        $('#show-get').append(options);
+    }
+
+
+    $(document).on("click", "#pills-exchange-tab", function () {
+        Notiflix.Block.dots('#showLoader', {
+            backgroundColor: loaderColor,
+        });
+
+        let formSubmitRoute = "https://coinectra.bugfinder.app/exchange/request";
+        $("#submitFormId").attr("action", formSubmitRoute);
+
+        activeTab = 'exchange';
+        let route = "https://coinectra.bugfinder.app/get-exchange/currency";
+        getExchangeCurrency(route);
+        $("#submitBtn").text("Exchange Now");
+    });
+
+    $(document).on("click", "#pills-Buy-tab", function () {
+        Notiflix.Block.dots('#showLoader', {
+            backgroundColor: loaderColor,
+        });
+
+        let formSubmitRoute = "https://coinectra.bugfinder.app/buy/request";
+        $("#submitFormId").attr("action", formSubmitRoute);
+
+        activeTab = 'buy';
+        let route = "https://coinectra.bugfinder.app/get-buy/currency";
+        getExchangeCurrency(route);
+        $("#submitBtn").text("Buy Now");
+    });
+
+    $(document).on("click", "#pills-Sell-tab", function () {
+        Notiflix.Block.dots('#showLoader', {
+            backgroundColor: loaderColor,
+        });
+
+        let formSubmitRoute = "https://coinectra.bugfinder.app/sell/request";
+        $("#submitFormId").attr("action", formSubmitRoute);
+
+        activeTab = 'sell';
+        let route = "https://coinectra.bugfinder.app/get-sell/currency";
+        getExchangeCurrency(route);
+        $("#submitBtn").text("Sell Now");
+    });
+
+    $(document).ready(function () {
+
+        $('.autoplay').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            autoplay: true,
+            arrows: false,
+            autoplaySpeed: 2000,
+        });
+    });
+
+    $(document).on("click", ".announceClass", function () {
+        let announceBodyShow = $('#announceBodyShow');
+        announceBodyShow.html('');
+        let heading = $(this).data('heading');
+        let des = $(this).data('des');
+        announceBodyShow.html(`<h4>${heading}</h4> ${des}`)
+    });
+
+</script>
+
+</body>
+
+</html>
