@@ -1,0 +1,1 @@
+# coinectra-template
